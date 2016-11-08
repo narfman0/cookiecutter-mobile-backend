@@ -1,4 +1,4 @@
-{% load staticfiles cms_tags menu_tags sekizai_tags %}
+{% raw %}{% load staticfiles cms_tags menu_tags sekizai_tags %}
 <!doctype html>
 <html>
     <head>
@@ -18,4 +18,4 @@
         </div>
         {% render_block "js" %}
     </body>
-</html>
+</html>{% endraw %}
