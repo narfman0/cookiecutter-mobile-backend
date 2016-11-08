@@ -1,0 +1,32 @@
+{
+    "staging": {
+        "django_settings": "{{ cookiecutter.project_slug }}.settings.staging",
+        "s3_bucket": "{{ cookiecutter.aws_storage_bucket_name }}_staging",
+        "environment_variables": {
+            "AWS_ACCESS_KEY_ID": "{{ cookiecutter.aws_access_key_id }}",
+            "AWS_SECRET_ACCESS_KEY": "{{ cookiecutter.aws_secret_access_key }}",
+            "AWS_STORAGE_BUCKET_NAME": "{{ cookiecutter.aws_storage_bucket_name }}_staging",
+            "DJANGO_SECRET_KEY": "{{ cookiecutter.django_secret_key }}",
+            "DATABASE_NAME": "{{ cookiecutter.database_name }}_staging",
+            "DATABASE_USER": "{{ cookiecutter.database_user }}",
+            "DATABASE_PASS": "{{ cookiecutter.database_pass }}",
+            "DATABASE_HOST": "{{ cookiecutter.database_host }}",
+            "DATABASE_PORT": "{{ cookiecutter.database_port }}"
+        }
+    },
+    "prod": {
+        "django_settings": "{{ cookiecutter.project_slug }}.settings.prod",
+        "s3_bucket": "{{ cookiecutter.aws_storage_bucket_name }}",
+        "environment_variables": {
+            "AWS_ACCESS_KEY_ID": "{{ cookiecutter.aws_access_key_id }}",
+            "AWS_SECRET_ACCESS_KEY": "{{ cookiecutter.aws_secret_access_key }}",
+            "AWS_STORAGE_BUCKET_NAME": "{{ cookiecutter.aws_storage_bucket_name }}",
+            "DJANGO_SECRET_KEY": "{{ cookiecutter.django_secret_key }}",
+            "DATABASE_NAME": "{{ cookiecutter.database_name }}",
+            "DATABASE_USER": "{{ cookiecutter.database_user }}",
+            "DATABASE_PASS": "{{ cookiecutter.database_pass }}",
+            "DATABASE_HOST": "{{ cookiecutter.database_host }}",
+            "DATABASE_PORT": "{{ cookiecutter.database_port }}"
+        }
+    }
+}

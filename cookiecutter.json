@@ -1,0 +1,15 @@
+{
+    "project_name": "mobile_backend",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+    "author_name": "Jon Robison",
+    "aws_access_key_id": "key_id",
+    "aws_secret_access_key": "secret_key",
+    "aws_storage_bucket_name": "{{ cookiecutter.project_slug }}_bucket",
+    "django_secret_key": "newly gen'd key",
+    "database_name": "{{ cookiecutter.project_slug }}",
+    "database_user": "{{ cookiecutter.project_slug }}_user",
+    "database_pass": "{{ cookiecutter.project_slug }}_pass",
+    "database_host": "127.0.0.1",
+    "database_port": "5432"
+
+}
