@@ -5,8 +5,10 @@
         <title>{% block title %}CMS Title{% endblock title %}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         {% render_block "css" %}
-        <link href="{% static 'aldryn_bootstrap3/css/bootstrap.min.css' %}" rel="stylesheet">
-        <link href="{% static 'aldryn_bootstrap3/css/font-awesome.min.css' %}" rel="stylesheet">
+        {% endraw %}{% if cookiecutter.use_bootstrap == 'y' %}{% raw %}
+          <link href="{% static 'aldryn_bootstrap3/css/bootstrap.min.css' %}" rel="stylesheet">
+          <link href="{% static 'aldryn_bootstrap3/css/font-awesome.min.css' %}" rel="stylesheet">
+        {% endraw %}{% endif %}{% raw %}
     </head>
     <body>
         {% cms_toolbar %}

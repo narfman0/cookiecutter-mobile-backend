@@ -5,6 +5,7 @@
     "aws_access_key_id": "key_id",
     "aws_secret_access_key": "secret_key",
     "aws_storage_bucket_name": "{{ cookiecutter.project_slug }}_bucket",
+    "use_bootstrap": "n",
     "django_secret_key": "newly gen'd key",
     "database_name": "{{ cookiecutter.project_slug }}",
     "database_user": "{{ cookiecutter.project_slug }}_user",

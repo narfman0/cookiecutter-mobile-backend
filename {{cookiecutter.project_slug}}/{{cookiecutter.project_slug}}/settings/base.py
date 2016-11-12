@@ -84,7 +84,7 @@ INSTALLED_APPS = (
     'treebeard',
     'djangocms_text_ckeditor',
     'filer',
-    'aldryn_bootstrap3',
+    {% if cookiecutter.use_bootstrap == 'y' %}'aldryn_bootstrap3',{% endif %}
     'easy_thumbnails',
     'djangocms_column',
     'djangocms_link',

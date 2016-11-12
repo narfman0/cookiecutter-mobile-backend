@@ -1,7 +1,7 @@
 {{ cookiecutter.project_slug }}
 ==============
 
-Django based AWS lambda friendly mobile backend framework. Includes rest framework, bootstrap3
+Django based AWS lambda friendly mobile backend framework. Includes rest framework{% if cookiecutter.use_bootstrap == 'y' %}, bootstrap3{% endif %}
 
 Usage
 -----
@@ -40,4 +40,3 @@ License
 Copyright (c) 2016 {{ cookiecutter.author_name }}
 
 See included LICENSE for licensing information
-
